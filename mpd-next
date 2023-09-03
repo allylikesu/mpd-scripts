@@ -1,4 +1,5 @@
 #!/bin/bash
 
 mpc -q next
+# EDIT THIS LINE TO POINT TO YOUR songinfo
 $HOME/bin/songinfo
