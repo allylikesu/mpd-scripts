@@ -25,3 +25,6 @@ Dunst notification daemon, Catppuccin color scheme.
 
 ## songinfo
 From the [ArchWiki article on ncmpcpp](https://wiki.archlinux.org/title/Ncmpcpp#With_album_art). Shows a desktop notification with the current playing track, with album art. Edit `musicdir` and `previewdir` to match your setup. Make sure `previewdir` exists, or else album are will not work.
+
+![image](https://github.com/allylikesu/mpd-scripts/assets/100547506/1433a463-e367-47db-837d-c7d9b1442065)
+
