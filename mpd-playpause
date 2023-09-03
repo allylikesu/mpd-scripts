@@ -1,0 +1,6 @@
+#!/bin/bash
+mpc -q toggle
+action=""
+[[ "$(mpc status '%state%')" == "playing" ]] && action=" unpaused." || action="󰏤 paused."
+#notify-send -t 1000 "MPD" "$action" -h string:x-canonical-private-synchronous:my-notification
+notify-send -t 1000 -r 27072 "MPD" "$action"

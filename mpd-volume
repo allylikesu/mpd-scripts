@@ -1,0 +1,9 @@
+#!/bin/bash
+STEP=$1
+[ -n "$STEP" ] || exit 1
+
+mpc -q volume "$STEP"
+
+VOLUME=$(mpc status '%volume%' | awk -F "%" '{print $1}' | xargs)
+#notify-send -t 1000 "MPD Volume: $VOLUME" -h string:x-canonical-private-synchronous:my-notification -h int:value:$VOLUME
+notify-send -t 1000 -r 27072 "MPD Volume: $VOLUME" -h int:value:$VOLUME
